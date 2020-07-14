@@ -35,4 +35,4 @@ setup: install venv-init
 
 test: update
 	bash -c "source venv/bin/activate && \
-		python -m pytest --doctest-modules"
+		python -m pytest --doctest-modules -v"
