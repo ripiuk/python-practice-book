@@ -8,8 +8,6 @@ Problem:
     ...     return x
     >>> y = f(3)
 
-    print(x, y)
-
 Solution:
     >>> print(x, y)
     2 9

@@ -6,9 +6,6 @@ Problem:
     >>> def f():
     ...     return x
 
-    print(x)
-    print(f())
-
 Solution:
     >>> print(x)
     1

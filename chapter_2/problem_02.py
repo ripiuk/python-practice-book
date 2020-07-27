@@ -4,8 +4,8 @@ Problem:
     Provide an implementation for `sum`.
 
 Solution:
-    >>> from functools import reduce
     >>> import typing as typ
+    >>> from functools import reduce
     >>> def sum_(list_: typ.List[int]) -> int:
     ...     return reduce(lambda x, y: x + y, list_)
 

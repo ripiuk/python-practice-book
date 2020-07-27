@@ -4,8 +4,8 @@ Problem:
     Can you make your `sum` function work for a list of strings as well.
 
 Solution:
-    >>> from functools import reduce
     >>> import typing as typ
+    >>> from functools import reduce
     >>> def sum_(list_: typ.List[str]) -> str:
     ...     return reduce(lambda x, y: x + y, list_)
 

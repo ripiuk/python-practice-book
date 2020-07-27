@@ -3,8 +3,8 @@ Problem:
     Implement a function `product`, to compute product of a list of numbers.
 
 Solution:
-    >>> from functools import reduce
     >>> import typing as typ
+    >>> from functools import reduce
     >>> def product(list_: typ.List[int]) -> int:
     ...     return reduce(lambda x, y: x * y, list_)
 

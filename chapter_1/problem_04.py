@@ -7,10 +7,6 @@ Problem:
     ...     x = 2
     ...     return x
 
-    print(x)
-    print(f())
-    print(x)
-
 Solution:
     >>> print(x)
     1
