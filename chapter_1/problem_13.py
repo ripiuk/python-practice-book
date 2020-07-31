@@ -1,6 +1,6 @@
 """
 Problem:
-    Write a program add.py that takes 2 numbers as command line arguments and prints its sum.
+    Write a program `add.py` that takes 2 numbers as command line arguments and prints its sum.
 
 Example:
     $ python chapter_1/problem_13.py 3 5

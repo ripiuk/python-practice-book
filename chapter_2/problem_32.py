@@ -6,7 +6,6 @@ Problem:
     characters in a string. For simplicity consider only letters from `a` to `z`.
 
 Solution:
-    >>> import tempfile
     >>> import typing as typ
     >>> from string import ascii_lowercase
     >>> def mutate(word: str) -> typ.Set[str]:
