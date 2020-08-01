@@ -366,3 +366,66 @@ single mutation on `b`.
     False
 
 > You can find the solution [here](problem_33.py).
+
+### Problem 34
+Improve the program to print the words in the descending order of the 
+number of occurrences:
+
+    def word_frequency(words):
+        """Returns frequency of each word given a list of words.
+    
+            >>> word_frequency(['a', 'b', 'a'])
+            {'a': 2, 'b': 1}
+        """
+        frequency = {}
+        for w in words:
+            frequency[w] = frequency.get(w, 0) + 1
+        return frequency
+
+    def read_words(filename):
+        return open(filename).read().split()
+
+    def main(filename):
+        frequency = word_frequency(read_words(filename))
+        for word, count in frequency.items():
+            print(word, count)
+    
+    if __name__ == "__main__":
+        import sys
+        main(sys.argv[1])
+
+> You can find the solution [here](problem_34.py).
+
+### Problem 35
+Write a program to count frequency of characters in a given file. 
+Can you use character frequency to tell whether the given file is a 
+Python program file, C program file or a text file?
+
+> You can find the solution [here](problem_35.py).
+
+### Problem 36
+Write a program to find anagrams in a given list of words. 
+Two words are called anagrams if one word can be formed by rearranging 
+letters of another. For example `eat`, `ate` and `tea` are anagrams.
+
+    >>> anagrams(['eat', 'ate', 'done', 'tea', 'soup', 'node'])
+    [['eat', 'ate', 'tea'], ['done', 'node'], ['soup']]
+
+> You can find the solution [here](problem_36.py).
+
+### Problem 37
+Write a function `valuesort` to sort values of a dictionary based on the key.
+
+    >>> valuesort({'x': 1, 'y': 2, 'a': 3})
+    [3, 1, 2]
+
+> You can find the solution [here](problem_37.py).
+
+### Problem 38
+Write a function `invertdict` to interchange keys and values in a dictionary. 
+For simplicity, assume that all values are unique.
+
+    >>> invertdict({'x': 1, 'y': 2, 'z': 3})
+    {1: 'x', 2: 'y', 3: 'z'}
+
+> You can find the solution [here](problem_38.py).
