@@ -14,28 +14,28 @@ import sys
 
 def main():
     """
-    Check the function with the data from the example above
-    >>> sys.argv = [sys.argv[0], '3', '5']
-    >>> main()
-    8
-    >>> sys.argv = [sys.argv[0], '2', '9']
-    >>> main()
-    11
+    Check the function with the data from the example above:
+        >>> sys.argv = [sys.argv[0], '3', '5']
+        >>> main()
+        8
+        >>> sys.argv = [sys.argv[0], '2', '9']
+        >>> main()
+        11
 
-    No arguments provided
-    >>> sys.argv = sys.argv[:1]
-    >>> main()
-    Please provide some arguments.
+    No arguments provided:
+        >>> sys.argv = sys.argv[:1]
+        >>> main()
+        Please provide some arguments.
 
-    Got strings instead of integers
-    >>> sys.argv = [sys.argv[0], '2', 'string']
-    >>> main()
-    Error: All the arguments should be integers
+    Got strings instead of integers:
+        >>> sys.argv = [sys.argv[0], '2', 'string']
+        >>> main()
+        Error: All the arguments should be integers
 
-    Many arguments
-    >>> sys.argv = [sys.argv[0], '1', '2', '3', '4', '5']
-    >>> main()
-    15
+    Many arguments:
+        >>> sys.argv = [sys.argv[0], '1', '2', '3', '4', '5']
+        >>> main()
+        15
     """
     if len(sys.argv) <= 1:
         print('Please provide some arguments.')
