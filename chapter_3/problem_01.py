@@ -5,9 +5,10 @@ Problem:
 
 import sys
 from pathlib import Path
+from functools import partial
 
 
-def main(dir_path: Path) -> None:
+def main(dir_path: Path, sort: bool = False) -> None:
     """List all files in the given directory
 
     Not existing directory:
@@ -28,12 +29,13 @@ def main(dir_path: Path) -> None:
         >>> with tempfile.TemporaryDirectory() as tmp_dir:
         ...     for i in range(1, 4):
         ...         (Path(tmp_dir) / f'file{i}.txt').touch()
-        ...     main(dir_path=Path(tmp_dir))
-        /tmp/.../file3.txt
+        ...     main(dir_path=Path(tmp_dir), sort=True)
         /tmp/.../file1.txt
         /tmp/.../file2.txt
+        /tmp/.../file3.txt
 
     :param dir_path: path to the needed directory
+    :param sort: sort files by name
     :return: None
     """
     if not dir_path.exists():
@@ -43,7 +45,8 @@ def main(dir_path: Path) -> None:
     if dir_path.is_file():
         dir_path = dir_path.parent
 
-    for item in dir_path.iterdir():
+    iter_dir = partial(sorted, dir_path.iterdir()) if sort else dir_path.iterdir
+    for item in iter_dir():
         print(item) if item.is_file() else None
 
 

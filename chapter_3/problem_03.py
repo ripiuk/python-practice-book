@@ -14,7 +14,7 @@ from pathlib import Path
 
 
 def main(dir_path: Path, byte_mode: bool = False) -> None:
-    """ list all the files in the given directory along with their stats
+    """List all the files in the given directory along with their stats
 
     Not existing directory:
         >>> main(dir_path=Path('/not/existing/directory'))

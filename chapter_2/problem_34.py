@@ -43,14 +43,13 @@ def word_frequency(words: typ.Iterable[str]) -> typ.Dict[str, int]:
     frequency = defaultdict(int)
     for w in words:
         frequency[w] += 1
-    return {
-        k: v for k, v in
+    return dict(
         sorted(
             frequency.items(),
             key=lambda item: item[1],
             reverse=True,
         )
-    }
+    )
 
 
 def read_words(filename: str) -> typ.List[str]:

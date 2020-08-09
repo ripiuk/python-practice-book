@@ -45,3 +45,17 @@ as argument and print all the files in it recursively as a tree.
     \-- z.txt
 
 > You can find the solution [here](problem_04.py).
+
+### Problem 5
+Write a program `wget.py` to download a given URL. 
+The program should accept a URL as argument, download it and save it 
+with the basename of the URL. If the URL ends with a `/`, consider 
+the basename as `index.html`. (Using `urllib` module)
+
+    $ python wget.py http://docs.python.org/tutorial/interpreter.html
+    saving http://docs.python.org/tutorial/interpreter.html as interpreter.html.
+    
+    $ python wget.py http://docs.python.org/tutorial/
+    saving http://docs.python.org/tutorial/ as index.html.
+
+> You can find the solution [here](problem_05.py).
