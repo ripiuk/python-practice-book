@@ -59,3 +59,42 @@ the basename as `index.html`. (Using `urllib` module)
     saving http://docs.python.org/tutorial/ as index.html.
 
 > You can find the solution [here](problem_05.py).
+
+### Problem 6
+Write a program `antihtml.py` that takes a URL as argument, downloads the html from 
+web and print it after stripping html tags using regex.
+
+    $ python antihtml.py index.html
+    ...
+    The Python interpreter is usually installed as /usr/local/bin/python on
+    those machines where it is available; putting /usr/local/bin in your
+    ...
+
+> You can find the solution [here](problem_06.py).
+
+### Problem 7
+Write a function make_slug that takes a name converts it into a slug. 
+A slug is a string where spaces and special characters are replaced by a hyphen, 
+typically used to create blog post URL from post title. It should also make sure 
+there are no more than one hyphen in any place and there are no hyphens at the 
+biginning and end of the slug.
+
+    >>> make_slug("hello world")
+    'hello-world'
+    >>> make_slug("hello  world!")
+    'hello-world'
+    >>> make_slug(" --hello-  world--")
+    'hello-world'
+
+> You can find the solution [here](problem_07.py).
+
+### Problem 8
+Write a program links.py that takes URL of a webpage as argument and prints 
+all the URLs linked from that webpage.
+
+> You can find the solution [here](problem_08.py).
+
+### Problem 9
+Write a regular expression to validate a phone number.
+
+> You can find the solution [here](problem_09.py).
