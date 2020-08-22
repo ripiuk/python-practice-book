@@ -33,7 +33,6 @@ def main(url: str) -> None:
         <BLANKLINE>
 
     HTML with https link:
-        >>> from unittest import mock
         >>> with mock.patch('chapter_3.problem_08.urlopen') as mock_urlopen:
         ...     mock_resp = mock.Mock()
         ...     mock_resp.read.return_value = b'<a href="https://www.python.org/">Python</a>'
@@ -42,7 +41,6 @@ def main(url: str) -> None:
         https://www.python.org/
 
     HTML with http link:
-        >>> from unittest import mock
         >>> with mock.patch('chapter_3.problem_08.urlopen') as mock_urlopen:
         ...     mock_resp = mock.Mock()
         ...     mock_resp.read.return_value = b'<a href="http://www.python.org/">Python</a>'
@@ -51,7 +49,6 @@ def main(url: str) -> None:
         http://www.python.org/
 
     HTML with many links:
-        >>> from unittest import mock
         >>> with mock.patch('chapter_3.problem_08.urlopen') as mock_urlopen:
         ...     mock_resp = mock.Mock()
         ...     mock_resp.read.return_value = \\

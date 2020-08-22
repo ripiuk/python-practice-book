@@ -98,3 +98,45 @@ all the URLs linked from that webpage.
 Write a regular expression to validate a phone number.
 
 > You can find the solution [here](problem_09.py).
+
+### Problem 10
+Write a program `myip.py` to print the external IP address of the machine. 
+Use the response from `http://httpbin.org/get` and read the IP address from there. 
+The program should print only the IP address and nothing else.
+
+> You can find the solution [here](problem_10.py).
+
+### Problem 11
+Write a python program `zip.py` to create a zip file. 
+The program should take name of zip file as first argument and files 
+to add as rest of the arguments.
+
+    $ python zip.py foo.zip file1.txt file2.txt
+
+> You can find the solution [here](problem_11.py)
+
+### Problem 12
+Write a program `mydoc.py` to implement the functionality of `pydoc`. 
+The program should take the module name as argument and print documentation 
+for the module and each of the functions defined in that module.
+
+    $ python mydoc.py os
+    Help on module os:
+    
+    DESCRIPTION
+    
+    os - OS routines for Mac, NT, or Posix depending on what system we're on.
+    ...
+    
+    FUNCTIONS
+    
+    getcwd()
+        ...
+
+Hints:
+* The `dir` function to get all entries of a module
+* The `inspect.isfunction` function can be used to test if given object is a function
+* `x.__doc__` gives the docstring for x.
+* The `__import__` function can be used to import a module by name
+
+> You can find the solution [here](problem_12.py)
