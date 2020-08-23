@@ -91,4 +91,4 @@ def main(file_name: str, *files) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], *sys.argv[2:])
+    main(file_name=sys.argv[1], *sys.argv[2:])

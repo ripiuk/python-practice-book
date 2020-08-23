@@ -68,4 +68,4 @@ def main(module_name: str) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(module_name=sys.argv[1])
