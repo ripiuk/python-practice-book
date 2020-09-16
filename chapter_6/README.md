@@ -22,3 +22,19 @@ Write a function `unflatten_dict` to do reverse of `flatten_dict`.
     {'a': 1, 'b': {'x': 2, 'y': 3}, 'c': 4}
 
 > You can find the solution [here](problem_03.py).
+
+### Problem 4
+Write a function `treemap` to map a function over nested list.
+
+    >>> treemap(lambda x: x*x, [1, 2, [3, 4, [5]]])
+    [1, 4, [9, 16, [25]]]
+
+> You can find the solution [here](problem_04.py).
+
+### Problem 5
+Write a function `tree_reverse` to reverse elements of a nested-list recursively.
+
+    >>> tree_reverse([[1, 2], [3, [4, 5]], 6])
+    [6, [[5, 4], 3], [2, 1]]
+
+> You can find the solution [here](problem_05.py).

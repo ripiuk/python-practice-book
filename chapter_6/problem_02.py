@@ -5,6 +5,7 @@ Problem:
 
 Solution:
     >>> import typing as typ
+
     >>> def flatten_dict(raw_dict: dict, sep: str = '.') -> dict:
     ...     def flatten(element: dict, parent: str = '') -> typ.Iterator[typ.Tuple[typ.Any, typ.Any]]:
     ...         if isinstance(element, dict):

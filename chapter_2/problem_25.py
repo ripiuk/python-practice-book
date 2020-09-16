@@ -6,8 +6,8 @@ Problem:
 
 Solution:
     >>> import typing as typ
-    >>> def map_(fn: typ.Callable, args: typ.Iterable) -> typ.List[typ.Any]:
-    ...     return [fn(el) for el in args]
+    >>> def map_(fn: typ.Callable, iterables: typ.Iterable) -> typ.List[typ.Any]:
+    ...     return [fn(el) for el in iterables]
 
     >>> def square(x): return x * x
     >>> map_(square, range(5))
