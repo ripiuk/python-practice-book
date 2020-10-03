@@ -10,7 +10,7 @@ Solution:
     ...     for k, v in raw_dict.items():
     ...         if isinstance(k, str) and sep in k:
     ...             curr_key, remainder = k.split(sep=sep, maxsplit=1)
-    ...             unflatten_dict(raw_dict={remainder: v}, curr_dict=curr_dict.setdefault(curr_key, {}))
+    ...             unflatten_dict(raw_dict={remainder: v}, sep=sep, curr_dict=curr_dict.setdefault(curr_key, {}))
     ...         else:
     ...             curr_dict[k] = v
     ...     return curr_dict
