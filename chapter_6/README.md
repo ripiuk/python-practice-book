@@ -105,3 +105,33 @@ of elements of a given list.
     [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
 
 > You can find the solution [here](problem_09.py).
+
+### Problem 10
+Write a function `profile`, which takes a function as argument and returns 
+a new function, which behaves exactly similar to the given function, 
+except that it prints the time consumed in executing it.
+
+    >>> fib = profile(fib)
+    >>> fib(20)
+    time taken: 0.1 sec
+    10946
+
+> You can find the solution [here](problem_10.py).
+
+### Problem 11
+Write a function `vectorize` which takes a function `f` and return a new 
+function, which takes a list as argument and calls `f` for every element 
+and returns the result as a list.
+
+    >>> def square(x): return x * x
+    ...
+    >>> f = vectorize(square)
+    >>> f([1, 2, 3])
+    [1, 4, 9]
+    >>> g = vectorize(len)
+    >>> g(["hello", "world"])
+    [5, 5]
+    >>> g([[1, 2], [2, 3, 4]])
+    [2, 3]
+
+> You can find the solution [here](problem_11.py).
